@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node ./src/server.ts",
-    "prod": "npm run build && node ./dist/server.js"
+    "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/server.ts",
+    "prod": "npm run build && node dist/server.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +31,7 @@
     "@types/mongoose": "^5.3.22",
     "@types/morgan": "^1.7.35",
     "morgan": "^1.9.1",
+    "nodemon": "^1.18.10",
     "ts-node": "^8.0.3",
     "tslint": "^5.14.0",
     "typescript": "^3.3.3333"
