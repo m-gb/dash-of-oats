@@ -1,0 +1,38 @@
+{
+  "name": "dash-of-oats",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node ./src/server.ts",
+    "prod": "npm run build && node ./dist/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-gb/dash-of-oats.git"
+  },
+  "author": "m-gb",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/m-gb/dash-of-oats/issues"
+  },
+  "homepage": "https://github.com/m-gb/dash-of-oats#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.17.0",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.16.1",
+    "@types/mongoose": "^5.3.22",
+    "@types/morgan": "^1.7.35",
+    "morgan": "^1.9.1",
+    "ts-node": "^8.0.3",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.3333"
+  }
+}
