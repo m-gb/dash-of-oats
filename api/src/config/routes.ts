@@ -3,13 +3,13 @@ import { Recipe, IRecipeModel } from '../models/recipe'
 
 export const router = express.Router()
 
-router.route('/').get((req, res) => {
+router.route('/api/v1/recipes').get((req, res) => {
   Recipe.find((err: any, recipes: IRecipeModel[]) => {
     if (err) {
-      console.log(err.message)
+      res.status(500).json({ error: err.message })
     }
     else {
-      res.json(recipes)
+      res.status(200).json(recipes)
     }
   })
 })
