@@ -4,10 +4,10 @@
     "moduleResolution": "node",
     "sourceMap": true,
     "target": "es6",
-    "outDir": "./dist"
+    "outDir": "dist"
   },
   "include": [
-    "./src/**/*.ts"
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules"
