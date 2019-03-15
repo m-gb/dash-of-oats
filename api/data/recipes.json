@@ -1,0 +1,20 @@
+[
+  {
+    "name": "banana_pancakes",
+    "type": "desserts",
+    "description": "These are banana pancakes.",
+    "ingredients": [
+      "1 tbs white vinegar",
+      "3/4 cups unsweetened almond milk",
+      "2 cups rolled oats",
+      "1 medium ripe banana",
+      "2 tsp baking powder",
+      "1/2 tsp baking soda",
+      "1/2 tsp ground cinnamon",
+      "1/2 tsp salt",
+      "3 tbs sugar",
+      "2 tsp vanilla extract"
+    ],
+    "image": "public/images/banana_pancakes.jpg"
+  }
+]
