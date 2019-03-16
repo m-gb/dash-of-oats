@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { IRecipe } from '../../../api/src/interfaces/recipe';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-home',
@@ -6,10 +8,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+  recipes: IRecipe[];
 
-  constructor() { }
+  constructor(private rs: RecipeService) { }
 
   ngOnInit() {
+    this.rs.getRecipes().subscribe((data: IRecipe[]) => {
+      this.recipes = data;
+    });
   }
 
+  editName(name: string): string {
+    return this.rs.editName(name);
+  }
 }
