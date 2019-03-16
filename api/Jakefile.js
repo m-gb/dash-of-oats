@@ -18,8 +18,8 @@ task('populate', [], () => {
         else {
           console.log("The recipes collection has been populated.")
         }
+        mongoose.connection.close()
       })
-      mongoose.connection.close()
     },
     err => { console.log(err.message) }
   )
@@ -37,8 +37,8 @@ task('drop', [], () => {
         else {
           console.log("The recipes collection has been dropped.")
         }
+        mongoose.connection.close()
       })
-      mongoose.connection.close()
     },
     err => { console.log(err.message) }
   )
