@@ -1,8 +1,12 @@
 <div>
   <h1>{{ editName(recipe?.name) }}</h1>
   <p><img src="{{ recipe?.image }}" alt="{{ recipe?.image }}"></p>
-  <ul *ngFor="let ingredient of recipe?.ingredients">
-    <li>{{ ingredient }}</li>
+  <p>Ingredients:</p>
+  <ul>
+    <li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
   </ul>
-  <p>{{ recipe?.instructions }}</p>
+  <p>Instructions:</p>
+  <ol>
+    <li *ngFor="let instruction of recipe?.instructions">{{ instruction }}</li>
+  </ol>
 </div>
