@@ -1,4 +1,6 @@
-<h1>Home</h1>
-<div *ngFor="let recipe of recipes">
+<main role="main" class="container">
+  <h1>Recipes</h1>
+  <div *ngFor="let recipe of recipes">
     <p><a [routerLink]="['/recipes', recipe.name]">{{ editName(recipe.name) }}</a></p>
-</div>
+  </div>
+</main>

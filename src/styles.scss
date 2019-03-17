@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 body, html {
     height: 100%;
@@ -11,24 +12,26 @@ body {
     font-size: 18px;
 }
 
+section {
+    margin: 0 auto;
+    min-height: 100%;
+    padding: 10rem 1rem 5rem;
+    width: 80%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 a {
     text-decoration: none;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1.3em;
-    display: grid;
-    grid-template-columns: 30% auto;
-
-    a {
-        color: white;
-    }
+a:hover {
+    text-decoration: none;
 }
 
-section {
-    width: 80%;
+.container {
     margin: 0 auto;
-    padding: 2em;
+    width: 80%;
 }
