@@ -1,5 +1,42 @@
-img {
-    height: 350px;
-    width: 350px;
-    float: right;
+h1 {
+    padding-bottom: 2rem;
+}
+
+.img-center {
+    width: 100%;
+}
+
+.overview {
+    margin: 0;
+    padding-top: 1rem;
+    background-color: grey;
+}
+
+.ingredients-instructions {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.ingredients {
+    background: #f9f9f9;
+    font-size: 1rem;
+    list-style: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    li {
+        border-bottom: 1px dashed #dedede;
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+.instructions {
+    font-size: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    li {
+        margin-bottom: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
 }

@@ -1,12 +1,33 @@
-<div>
-  <h1>{{ editName(recipe?.name) }}</h1>
-  <p><img src="{{ recipe?.image }}" alt="{{ recipe?.image }}"></p>
-  <p>Ingredients:</p>
-  <ul>
-    <li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
-  </ul>
-  <p>Instructions:</p>
-  <ol>
-    <li *ngFor="let instruction of recipe?.instructions">{{ instruction }}</li>
-  </ol>
-</div>
+<main role="main" class="container">
+  <h1 class="text-center">{{ editName(recipe?.name) }}</h1>
+  <div class="row">
+    <div class="col-12">
+      <img src="{{ recipe?.image }}" alt="{{ recipe?.image }}" class="img-center">
+    </div>
+  </div>
+  <div class="row overview text-center">
+    <div class="col-4">
+      <p>Servings: {{ recipe?.servings }}</p>
+    </div>
+    <div class="col-4">
+      <p>Prep: {{ recipe?.prep }}</p>
+    </div>
+    <div class="col-4">
+      <p>Cooking: {{ recipe?.cooking }}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <h3 class="ingredients-instructions">Ingredients:</h3>
+      <ul class="ingredients">
+        <li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
+      </ul>
+    </div>
+    <div class="col-8">
+      <h3 class="ingredients-instructions">Instructions:</h3>
+      <ol class="instructions">
+        <li *ngFor="let instruction of recipe?.instructions">{{ instruction }}</li>
+      </ol>
+    </div>
+  </div>
+</main>
