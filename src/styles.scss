@@ -15,35 +15,35 @@ body {
 section {
     margin: 0 auto -4rem;
     min-height: 100%;
-    padding: 10rem 1rem 4rem;
-    position: relative;
+    padding: 4rem 1rem 4rem;
     width: 80%;
 }
 
 h1 {
     font-weight: bold;
+    padding-bottom: 2rem;
 }
 
 a {
-    text-decoration: none;
+    color: darkslategrey;
 }
 
 a:hover {
+    color: darkslategrey;
     text-decoration: none;
 }
 
 .container {
     margin: 0 auto;
-    width: 80%;
+    width: 100%;
 }
 
 .footer {
     height: 4rem;
     padding: 1rem;
-    background-color: #343a40;
-    color: rgba(255,255,255,.5);
     width: 100%;
     span {
+        font-size: 0.9rem;
         padding-left: 10rem;
     }
 }
