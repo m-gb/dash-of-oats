@@ -1,6 +1,6 @@
 export interface IRecipe {
   name: string,
-  type: string,
+  category: string,
   servings: number,
   prep: string,
   cooking: string,

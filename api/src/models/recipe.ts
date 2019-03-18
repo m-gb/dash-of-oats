@@ -5,7 +5,7 @@ export interface IRecipeModel extends IRecipe, Document { }
 
 export var RecipeSchema: Schema = new Schema({
   name: String,
-  type: String,
+  category: String,
   servings: Number,
   prep: String,
   cooking: String,

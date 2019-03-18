@@ -1,7 +1,7 @@
 [
   {
     "name": "banana_pancakes",
-    "type": "desserts",
+    "category": "breakfasts",
     "servings": "12",
     "prep": "10 min",
     "cooking": "24 min",
@@ -31,7 +31,7 @@
   },
   {
     "name": "chocolate_babka",
-    "type": "desserts",
+    "category": "desserts",
     "servings": "1",
     "prep": "30 min",
     "cooking": "45 min",
@@ -70,7 +70,7 @@
   },
   {
     "name": "chocolate_cake",
-    "type": "desserts",
+    "category": "desserts",
     "servings": "1",
     "prep": "30 min",
     "cooking": "35 min",
@@ -99,7 +99,7 @@
   },
   {
     "name": "chocolate_chip_cookies",
-    "type": "desserts",
+    "category": "desserts",
     "servings": "12",
     "prep": "10 min",
     "cooking": "13 min",
@@ -126,7 +126,7 @@
   },
   {
     "name": "cinnamon_swirl_cake",
-    "type": "desserts",
+    "category": "desserts",
     "servings": "1",
     "prep": "30 min",
     "cooking": "55 min",
@@ -165,7 +165,7 @@
   },
   {
     "name": "energy_bars",
-    "type": "snacks",
+    "category": "breakfasts",
     "servings": "8",
     "prep": "10 min",
     "cooking": "2 hrs",
@@ -190,7 +190,7 @@
   },
   {
     "name": "sweet_and_sour_sauce",
-    "type": "sauces",
+    "category": "sauces",
     "servings": "1",
     "prep": "10 min",
     "cooking": "10 min",
@@ -212,7 +212,7 @@
   },
   {
     "name": "teriyaki_sauce",
-    "type": "sauces",
+    "category": "sauces",
     "servings": "1",
     "prep": "10 min",
     "cooking": "10 min",
