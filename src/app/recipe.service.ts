@@ -10,13 +10,18 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   public getRecipes() {
-    return this.http.get(`${this.uri}/recipes`);
+    return this.http.get(`${this.uri}`);
   }
 
   public getRecipe(name: string) {
-    return this.http.get(`${this.uri}/recipes/${name}`);
+    return this.http.get(`${this.uri}/${name}`);
   }
 
+  public getCategory(category: string) {
+    return this.http.get(`${this.uri}/categories/${category}`);
+  }
+
+  // Modifies a given recipe name to be capitalized and spaced.
   public editName(name: string): string {
     if(name) {
       let splitWords: string[] = name.split("_");
