@@ -230,5 +230,28 @@
       "Remove the pan from the heat and allow the teriyaki sauce to cool."
     ],
     "image": "assets/images/teriyaki_sauce.jpg"
+  },
+  {
+    "name": "bbq_tempeh_sandwich",
+    "category": "lunches",
+    "servings": "4",
+    "prep": "3 min",
+    "cooking": "20 min",
+    "ingredients": [
+      "1 package tempeh",
+      "1 cup BBQ sauce",
+      "1/4 cup water",
+      "8 slices of sourdough bread, toasted",
+      "1/2 tomato, sliced",
+      "4 large romaine leaves, halved",
+      "1 small avocado"
+    ],
+    "instructions": [
+      "Place the tempeh in a saucepan, and cover with the BBQ sauce and water.",
+      "Make sure that the tempeh slices are covered on all sides.",
+      "Cook and simmer on medium-low heat for 20-30 minutes.",
+      "On toasted bread layer the sliced tomato, romaine leaves, avocado and BBQ tempeh."
+    ],
+    "image": "assets/images/bbq_tempeh_sandwich.jpg"
   }
 ]
