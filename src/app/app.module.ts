@@ -1,4 +1,4 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -27,7 +27,7 @@ import { FooterComponent } from './footer/footer.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [ RecipeService ],
+  providers: [ RecipeService, Title ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

@@ -1,6 +1,18 @@
 <main role="main" class="container">
   <h1>Recipes</h1>
-  <div *ngFor="let recipe of recipes">
-    <p><a [routerLink]="['/recipes', recipe.name]">{{ editName(recipe.name) }}</a></p>
+  <div class="row">
+    <div *ngFor="let recipe of recipes">
+      <div class="col">
+        <a [routerLink]="['/recipes', recipe.name]" class="recipe">
+          <div class="recipe-img">
+            <img src="{{ recipe.image }}" alt="{{ updateName(recipe.name) }}">
+            <div class="overlay">
+              <p class="overlay-text">Get started!</p>
+            </div>
+          </div>
+          <p class="text-center">{{ updateName(recipe.name) }}</p>
+        </a>
+      </div>
+    </div>
   </div>
 </main>

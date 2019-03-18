@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import { IRecipe } from '../../../api/src/interfaces/recipe';
 import { RecipeService } from '../recipe.service';
 
@@ -10,15 +11,16 @@ import { RecipeService } from '../recipe.service';
 export class HomeComponent implements OnInit {
   recipes: IRecipe[];
 
-  constructor(private rs: RecipeService) { }
+  constructor(private titleService: Title, private rs: RecipeService) { }
 
   ngOnInit() {
+    this.titleService.setTitle('Dash of Oats');
     this.rs.getRecipes().subscribe((data: IRecipe[]) => {
       this.recipes = data;
     });
   }
 
-  editName(name: string): string {
+  updateName(name: string): string {
     return this.rs.editName(name);
   }
 }
