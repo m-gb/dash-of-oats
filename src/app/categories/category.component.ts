@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { IRecipe } from '../../../api/src/interfaces/recipe';
-import { RecipeService } from '../recipe.service';
+import { RecipeService } from '../services/recipe.service';
 
 @Component({
   selector: 'app-category',

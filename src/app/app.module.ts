@@ -9,7 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { RecipeComponent } from './recipes/recipe.component';
-import { RecipeService } from './recipe.service';
+import { RecipeService } from './services/recipe.service';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './categories/category.component';
 
