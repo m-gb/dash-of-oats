@@ -1,0 +1,28 @@
+.search-bar {
+    width: 350px !important;
+}
+
+.search-results {
+    background-color: white;
+    color: black;
+    position: absolute;
+    padding: 0;
+    width: 350px !important;
+    border: 1px solid black;
+    z-index: 1;
+    li {
+        list-style: none;
+    }
+}
+
+.search-item {
+    border-bottom: 1px solid lightgrey;
+    font-size: 15px;
+    padding: 0.5rem;
+}
+
+.search-img {
+    height: 4rem;
+    width: 4rem;
+    padding-right: 0.5rem; 
+}

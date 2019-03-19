@@ -1,0 +1,8 @@
+<input class="form-control py-2 search-bar" [(ngModel)]="searchText" type="search" placeholder="Search recipes"
+  aria-label="Search recipes">
+<ul class="search-results">
+  <li class="search-item" *ngFor="let recipe of recipes | filter:searchText">
+    <img class="search-img" src="{{ recipe.image }}" alt="{{ updateName(recipe.name) }}">
+    <a [routerLink]="['/recipes', recipe.name]">{{ updateName(recipe.name) }}</a>
+  </li>
+</ul>

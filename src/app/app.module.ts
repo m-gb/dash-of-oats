@@ -1,6 +1,7 @@
 import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,6 +13,8 @@ import { RecipeComponent } from './recipes/recipe.component';
 import { RecipeService } from './services/recipe.service';
 import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './categories/category.component';
+import { SearchComponent } from './search/search.component';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -22,12 +25,15 @@ import { CategoryComponent } from './categories/category.component';
     HomeComponent,
     RecipeComponent,
     FooterComponent,
-    CategoryComponent
+    CategoryComponent,
+    SearchComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [ RecipeService, Title ],
   bootstrap: [ AppComponent ]
