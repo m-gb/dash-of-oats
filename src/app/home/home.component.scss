@@ -1,0 +1,29 @@
+.line-spacing {
+    margin: 1em 0;
+}
+.line {
+    line-height: 0;
+    text-align: center;
+}
+.line span {
+    display: inline-block;
+    position: relative;  
+}
+.line span:before,
+.line span:after {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    content: "";
+    position: absolute;
+    top: 0;    
+    height: 0.5rem;
+    width: 250%;
+}
+.line span:before {
+    right: 100%;
+    margin-right: 1rem;
+}
+.line span:after {
+    left: 100%;
+    margin-left: 1rem;
+}

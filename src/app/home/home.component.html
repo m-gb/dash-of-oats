@@ -1,6 +1,6 @@
 <main role="main" class="container">
-  <h1>Recipes</h1>
-  <div class="row">
+  <h1 class="line line-spacing"><span>Recipes</span></h1>
+  <div class="row center">
     <div *ngFor="let recipe of recipes">
       <div class="col">
         <a [routerLink]="['/recipes', recipe.name]" class="recipe">
