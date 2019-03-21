@@ -11,6 +11,7 @@ import { RecipeService } from '../services/recipe.service';
 })
 export class RecipeComponent implements OnInit {
   recipe: IRecipe;
+  initialServings: number;
 
   constructor(private titleService: Title, private rs: RecipeService, private route: ActivatedRoute) { }
 
@@ -18,6 +19,7 @@ export class RecipeComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.rs.getRecipe(params.get('name')).subscribe((data: IRecipe) => {
         this.recipe = data;
+        this.initialServings = data.servings;
         this.titleService.setTitle('Dash of Oats - ' + this.updateName(this.recipe.name));
       });
     });

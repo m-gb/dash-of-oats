@@ -21,6 +21,7 @@
     "@angular/router": "~7.2.0",
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
+    "fraction.js": "^4.0.12",
     "jquery": "^3.3.1",
     "popper.js": "^1.14.7",
     "rxjs": "~6.3.3",

@@ -7,7 +7,8 @@
   </div>
   <div class="row overview text-center">
     <div class="col-4">
-      <p>Servings: {{ recipe?.servings }}</p>
+      <span>Servings: </span>
+      <input class="servings-input input-group-text" [(ngModel)]="servingsInput" type="number" min="1" max="24" value="{{ recipe?.servings }}">
     </div>
     <div class="col-4">
       <p>Prep: {{ recipe?.prep }}</p>
@@ -20,7 +21,7 @@
     <div class="col-4">
       <h3 class="ingredients-instructions">Ingredients:</h3>
       <ul class="ingredients">
-        <li *ngFor="let ingredient of recipe?.ingredients">{{ ingredient }}</li>
+        <li *ngFor="let ingredient of recipe?.ingredients | calculator:servingsInput:initialServings">{{ ingredient }}</li>
       </ul>
     </div>
     <div class="col-8">

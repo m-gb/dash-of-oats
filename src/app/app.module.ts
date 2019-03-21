@@ -15,6 +15,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CategoryComponent } from './categories/category.component';
 import { SearchComponent } from './search/search.component';
 import { FilterPipe } from './pipes/filter.pipe';
+import { CalculatorPipe } from './pipes/calculator.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { FilterPipe } from './pipes/filter.pipe';
     FooterComponent,
     CategoryComponent,
     SearchComponent,
-    FilterPipe
+    FilterPipe,
+    CalculatorPipe
   ],
   imports: [
     BrowserModule,
