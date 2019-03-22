@@ -4,9 +4,9 @@ This web application is a recipe blog, including a servings calculator and a sea
 
 It's designed as a microservice:
 - using a NodeJS backend API written with TypeScript to retrieve the recipes from a mongoDB database. 
-- using an Angular 7 frontend also written with Typescript to display the recipes.
+- using an Angular 7 frontend also written with Typescript and Bootstrap to display the recipes.
 
-The servings calculator uses a pipe to multiply the ingredient amounts (some are fractions) by the chosen servings.
+The servings calculator uses a pipe to multiply the ingredient amounts (using Fraction.js) by the chosen servings.
 The search function also uses a pipe to find recipes with the user's input.
 
 ## Development
