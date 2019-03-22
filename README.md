@@ -45,7 +45,13 @@ In order to run the web application, you will need to have three separate tabs i
 
 ## Testing
 
-In order to run the tests, run the command: 
+In order to run the tests:
+
+- Backend:
+```bash
+    dash-of-oats/api $ npm test
+```
+- Frontend:
 ```bash
     dash-of-oats $ ng test
 ```
