@@ -1,27 +1,51 @@
-# DashOfOats
+# Dash of Oats
+## Description
+This web application is a recipe blog, including a servings calculator and a search function with suggestions.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.5.
+It's designed as a microservice:
+- using a NodeJS backend API written with TypeScript to retrieve the recipes from a mongoDB database. 
+- using an Angular 7 frontend also written with Typescript to display the recipes.
 
-## Development server
+The servings calculator uses a pipe to multiply the ingredient amounts (some are fractions) by the chosen servings.
+The search function also uses a pipe to find recipes with the user's input.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Development
 
-## Code scaffolding
+In order to run the web application, you will need to have three separate tabs in the terminal:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Install and run mongoDB
+- Configure and run the backend:
+    - Install the dependencies:
+    ```bash
+        dash-of-oats/api $ npm install
+    ```
+    - Install jake:
+    ```bash
+        dash-of-oats/api $ npm install -g jake
+    ```
+    - Populate the database:
+    ```bash
+        dash-of-oats/api $ jake populate
+    ```
+    - Run the API:
+    ```bash
+        dash-of-oats/api $ npm run dev
+    ```
+    - (Optional) Go to http://localhost:3000/api/v1/
+- Configure and run the frontend:
+    - Install the dependencies:
+    ```bash
+        dash-of-oats $ npm install
+    ```
+    - Run the website:
+    ```bash
+        dash-of-oats $ ng serve
+    ```
+    - Go to http://localhost:4200/
 
-## Build
+## Testing
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+In order to run the tests, run the command: 
+```bash
+    dash-of-oats $ ng test
+```
