@@ -4,6 +4,7 @@ import * as express from 'express'
 import * as morgan from 'morgan'
 import * as mongoose from 'mongoose'
 import * as routes from './config/routes'
+import errorMiddleware from './middlewares/error'
 
 class App {
   constructor() {
@@ -20,13 +21,14 @@ class App {
     this.app.set('port', process.env.PORT || port)
     this.app.use(bodyParser.json())
     this.app.use(cors())
+    this.app.use(errorMiddleware)
     this.app.use(morgan('dev'))
   }
 
   private db(): void {
     const uri: string = "mongodb://127.0.0.1:27017/recipes"
     mongoose.connect(uri, { useNewUrlParser: true }).then(
-      () => { console.log("Connected to the database.\n") },
+      () => { },
       err => { console.log(err.message) }
     )
   }

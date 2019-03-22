@@ -10,11 +10,11 @@ export class RecipeService {
   constructor(private http: HttpClient) { }
 
   public getRecipes() {
-    return this.http.get(`${this.uri}`);
+    return this.http.get(`${this.uri}/recipes`);
   }
 
   public getRecipe(name: string) {
-    return this.http.get(`${this.uri}/${name}`);
+    return this.http.get(`${this.uri}/recipes/${name}`);
   }
 
   public getCategory(category: string) {
