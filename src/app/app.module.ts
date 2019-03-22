@@ -17,6 +17,7 @@ import { CategoryComponent } from './categories/category.component';
 import { SearchComponent } from './search/search.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CalculatorPipe } from './pipes/calculator.pipe';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CalculatorPipe } from './pipes/calculator.pipe';
     CategoryComponent,
     SearchComponent,
     FilterPipe,
-    CalculatorPipe
+    CalculatorPipe,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
