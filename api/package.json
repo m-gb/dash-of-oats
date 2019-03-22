@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/server.ts",
-    "prod": "npm run build && node dist/server.js"
+    "prod": "npm run build && node dist/server.js",
+    "test": "mocha -r ts-node/register src/**/*.spec.ts --exit"
   },
   "repository": {
     "type": "git",
@@ -26,11 +27,17 @@
   },
   "devDependencies": {
     "@types/body-parser": "^1.17.0",
+    "@types/chai": "^4.1.7",
+    "@types/chai-http": "^4.2.0",
     "@types/cors": "^2.8.4",
     "@types/express": "^4.16.1",
+    "@types/mocha": "^5.2.6",
     "@types/mongoose": "^5.3.22",
     "@types/morgan": "^1.7.35",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
     "jake": "^8.0.19",
+    "mocha": "^6.0.2",
     "morgan": "^1.9.1",
     "nodemon": "^1.18.10",
     "ts-node": "^8.0.3",
