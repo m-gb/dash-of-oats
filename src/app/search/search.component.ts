@@ -8,6 +8,7 @@ import { RecipeService } from '../services/recipe.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent implements OnInit {
+  clickedOutside: boolean = true;
   recipes: IRecipe[];
 
   constructor(private rs: RecipeService) { }
@@ -20,5 +21,13 @@ export class SearchComponent implements OnInit {
 
   updateName(name: string): string {
     return this.rs.editName(name);
+  }
+
+  onClickedInside() {
+    this.clickedOutside = true;
+  }
+
+  onClickedOutside() {
+    this.clickedOutside = false;
   }
 }

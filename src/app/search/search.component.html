@@ -1,12 +1,16 @@
-<div class="has-search">
-  <img src="../../assets/open-iconic/png/magnifying-glass-2x.png" class="form-control-feedback">
-  <input class="form-control search-bar" [(ngModel)]="searchText" type="search" placeholder="Search recipes"
-    aria-label="Search recipes">
-</div>
+<div (clickOutside)="onClickedOutside()">
+  <div class=" has-search">
+    <img src="../../assets/open-iconic/png/magnifying-glass-2x.png" class="form-control-feedback">
+    <input class="form-control search-bar" [(ngModel)]="searchText" type="search" placeholder="Search recipes"
+      aria-label="Search recipes" (click)="onClickedInside()">
+  </div>
 
-<ul class="search-results">
-  <li class="search-item" *ngFor="let recipe of recipes | filter:searchText">
-    <img class="search-img" src="{{ recipe.image }}" alt="{{ updateName(recipe.name) }}">
-    <a [routerLink]="['/recipes', recipe.name]">{{ updateName(recipe.name) }}</a>
-  </li>
-</ul>
+  <ul class="search-results" *ngIf="clickedOutside">
+    <li class="search-item" *ngFor="let recipe of recipes | filter:searchText">
+      <a [routerLink]="['/recipes', recipe.name]" (click)="onClickedOutside()">
+        <img class="search-img" src="{{ recipe.image }}" alt="{{ updateName(recipe.name) }}">
+        <span>{{ updateName(recipe.name) }}</span>
+      </a>
+    </li>
+  </ul>
+</div>
