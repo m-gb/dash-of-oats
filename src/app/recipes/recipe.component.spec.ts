@@ -1,6 +1,11 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { RecipeComponent } from './recipe.component';
+import { CalculatorPipe } from '../pipes/calculator.pipe';
+import { NotFoundComponent } from '../not-found/not-found.component';
 
 describe('RecipeComponent', () => {
   let component: RecipeComponent;
@@ -8,7 +13,8 @@ describe('RecipeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RecipeComponent ]
+      declarations: [ CalculatorPipe, NotFoundComponent, RecipeComponent ],
+      imports: [ FormsModule, HttpClientModule, RouterTestingModule ]
     })
     .compileComponents();
   }));
