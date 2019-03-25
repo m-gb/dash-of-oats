@@ -55,3 +55,8 @@ In order to run the tests:
 ```bash
     dash-of-oats $ ng test
 ```
+
+- End-to-End:
+```bash
+    dash-of-oats $ ng e2e
+```
