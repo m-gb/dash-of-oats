@@ -5,7 +5,16 @@ export class AppPage {
     return browser.get(browser.baseUrl) as Promise<any>;
   }
 
-  getTitleText() {
+  getHeadingText() {
     return element(by.css('app-root h1')).getText() as Promise<string>;
   }
+
+  showCategories() {
+    return element(by.className('category')).getAttribute('href') as Promise<any>;
+  }
+
+  showRecipes() {
+    return element(by.className('recipe')).getAttribute('href') as Promise<any>;
+  }
+  
 }

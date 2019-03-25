@@ -8,9 +8,19 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should display heading', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual('Welcome to dash-of-oats!');
+    expect(page.getHeadingText()).toEqual('Recipes');
+  });
+
+  it('should display categories', () => {
+    page.navigateTo();
+    expect(page.showCategories()).not.toBeNull();
+  });
+
+  it('should display recipes', () => {
+    page.navigateTo();
+    expect(page.showRecipes()).not.toBeNull();
   });
 
   afterEach(async () => {
