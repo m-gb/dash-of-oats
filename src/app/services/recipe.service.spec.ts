@@ -6,11 +6,11 @@ import { RecipeService } from './recipe.service';
 
 describe('RecipeService', () => {
   let rs: RecipeService;
-  let response;
+  let response: Object;
   const allRecipes = [
     {
-      "name": "Recipe 1",
-      "category": "Category 1",
+      "name": "banana_pancakes",
+      "category": "breakfasts",
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
@@ -22,11 +22,11 @@ describe('RecipeService', () => {
         "Instruction 1",
         "Instruction 2"
       ],
-      "image": "assets/images/recipe1.jpg"
+      "image": "assets/images/banana_pancakes.jpg"
     },
     {
-      "name": "Recipe 2",
-      "category": "Category 2",
+      "name": "chocolate_babka",
+      "category": "desserts",
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
@@ -38,13 +38,13 @@ describe('RecipeService', () => {
         "Instruction 1",
         "Instruction 2"
       ],
-      "image": "assets/images/recipe2.jpg"
+      "image": "assets/images/chocolate_babka.jpg"
     }
   ];
   const oneRecipe = [
     {
-      "name": "Recipe 1",
-      "category": "Category 1",
+      "name": "banana_pancakes",
+      "category": "breakfasts",
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
@@ -84,7 +84,7 @@ describe('RecipeService', () => {
 
   describe('getRecipe', () => {
     it('should return one recipe based on its name', () => {
-      const name = 'Recipe 1';
+      const name = 'banana_pancakes';
       spyOn(rs, 'getRecipe').and.returnValue(of(oneRecipe));
       rs.getRecipe(name).subscribe(res => {
         response = res;
@@ -93,9 +93,20 @@ describe('RecipeService', () => {
     });
   });
 
+  describe('getCategories', () => {
+    it('should return an array of categories', () => {
+      const allCategories = [ "breakfasts", "desserts", "lunches", "sauces" ];
+      spyOn(rs, 'getCategories').and.returnValue(of(allCategories));
+      rs.getCategories().subscribe(res => {
+        response = res;
+      });
+      expect(response).toEqual(allCategories);
+    });
+  });
+
   describe('getCategory', () => {
     it('should return one recipe based on its category', () => {
-      const category = 'Category 1';
+      const category = 'breakfasts';
       spyOn(rs, 'getCategory').and.returnValue(of(oneRecipe));
       rs.getCategory(category).subscribe(res => {
         response = res;

@@ -17,6 +17,10 @@ export class RecipeService {
     return this.http.get(`${this.uri}/recipes/${name}`);
   }
 
+  public getCategories() {
+    return this.http.get(`${this.uri}/categories`);
+  }
+
   public getCategory(category: string) {
     return this.http.get(`${this.uri}/categories/${category}`);
   }
