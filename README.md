@@ -31,7 +31,7 @@ In order to run the web application, you will need to have three separate tabs i
     ```bash
         dash-of-oats/api $ npm run dev
     ```
-    - (Optional) Go to http://localhost:3000/api/v1/
+    - (Optional) Go to http://localhost:3000/api/v1/recipes
 - Configure and run the frontend:
     - Install the dependencies:
     ```bash
@@ -41,7 +41,7 @@ In order to run the web application, you will need to have three separate tabs i
     ```bash
         dash-of-oats $ ng serve
     ```
-    - Go to http://localhost:4200/
+    - Go to http://localhost:4200
 
 ## Testing
 
