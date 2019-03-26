@@ -16,5 +16,13 @@ export class AppPage {
   showRecipes() {
     return element(by.className('recipe')).getAttribute('href') as Promise<any>;
   }
+
+  searchBananaPancakes() {
+    element(by.className('search-bar')).sendKeys('banana');
+  }
   
+  getSearchResults() {
+    return element(by.linkText('Banana Pancakes')).isPresent() as Promise<boolean>;
+  }
+
 }

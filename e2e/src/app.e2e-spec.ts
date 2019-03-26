@@ -1,7 +1,7 @@
 import { AppPage } from './app.po';
 import { browser, logging } from 'protractor';
 
-describe('workspace-project App', () => {
+describe('App page', () => {
   let page: AppPage;
 
   beforeEach(() => {
@@ -22,6 +22,12 @@ describe('workspace-project App', () => {
     page.navigateTo();
     expect(page.showRecipes()).not.toBeNull();
   });
+
+  it('should filter recipes', () => {
+    page.navigateTo();
+    page.searchBananaPancakes();
+    expect(page.getSearchResults()).toBeTruthy();
+  })
 
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
