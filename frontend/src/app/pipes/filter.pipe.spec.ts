@@ -3,7 +3,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { FilterPipe } from './filter.pipe';
 import { RecipeService } from '../services/recipe.service';
-import { IRecipe } from '../../../api/src/interfaces/recipe';
+import { IRecipe } from '../services/recipe.service';
 
 describe('FilterPipe', () => {
   let rs: RecipeService;

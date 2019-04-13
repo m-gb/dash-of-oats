@@ -17,29 +17,29 @@ In order to run the web application, you will need to have three separate tabs i
 - Configure and run the backend:
     - Install the dependencies:
     ```bash
-        dash-of-oats/api $ npm install
+        dash-of-oats/backend $ npm install
     ```
     - Install jake:
     ```bash
-        dash-of-oats/api $ npm install -g jake
+        dash-of-oats/backend $ npm install -g jake
     ```
     - Populate the database:
     ```bash
-        dash-of-oats/api $ jake populate
+        dash-of-oats/backend $ jake populate
     ```
     - Run the API:
     ```bash
-        dash-of-oats/api $ npm run dev
+        dash-of-oats/backend $ npm run dev
     ```
     - (Optional) Go to http://localhost:3000/api/v1/recipes
 - Configure and run the frontend:
     - Install the dependencies:
     ```bash
-        dash-of-oats $ npm install
+        dash-of-oats/frontend $ npm install
     ```
     - Run the website:
     ```bash
-        dash-of-oats $ ng serve
+        dash-of-oats/frontend $ ng serve
     ```
     - Go to http://localhost:4200
 
@@ -49,14 +49,14 @@ In order to run the tests:
 
 - Backend:
 ```bash
-    dash-of-oats/api $ npm test
+    dash-of-oats/backend $ npm test
 ```
 - Frontend:
 ```bash
-    dash-of-oats $ ng test
+    dash-of-oats/frontend $ ng test
 ```
 
 - End-to-End:
 ```bash
-    dash-of-oats $ ng e2e
+    dash-of-oats/frontend $ ng e2e
 ```

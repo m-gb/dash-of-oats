@@ -1,6 +1,6 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { IRecipe } from '../../../api/src/interfaces/recipe';
-import { RecipeService } from '../services/recipe.service'
+import { IRecipe } from '../services/recipe.service';
+import { RecipeService } from '../services/recipe.service';
 
 @Pipe({
   name: 'filter'

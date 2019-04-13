@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
-import { IRecipe } from '../../../api/src/interfaces/recipe';
+import { IRecipe } from '../services/recipe.service';
 import { RecipeService } from '../services/recipe.service';
 
 @Component({

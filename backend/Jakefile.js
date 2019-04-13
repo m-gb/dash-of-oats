@@ -2,7 +2,7 @@ var fs = require('fs')
 var mongoose = require('mongoose')
 var path = require('path')
 
-const uri = "mongodb://127.0.0.1:27017/recipes"
+const uri = "mongodb://localhost:27017/recipes"
 
 desc('This is a Jake task to populate the recipes collection.')
 task('populate', [], () => {

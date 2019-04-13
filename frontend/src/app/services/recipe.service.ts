@@ -1,6 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
+export interface IRecipe {
+  name: string,
+  category: string,
+  servings: string,
+  prep: string,
+  cooking: string,
+  ingredients: string[],
+  instructions: string[],
+  image: string
+}
+
 @Injectable({
   providedIn: 'root'
 })
@@ -27,13 +38,13 @@ export class RecipeService {
 
   // Modifies a given recipe name to be capitalized and spaced.
   public editName(name: string): string {
-    if(name) {
-      let splitWords: string[] = name.split("_");
-      let uppercaseWords: string[] = splitWords.map(n => n.charAt(0).toUpperCase() + n.slice(1));
-      return uppercaseWords.join(" ");
+    if (name) {
+      const splitWords: string[] = name.split('_');
+      const uppercaseWords: string[] = splitWords.map(n => n.charAt(0).toUpperCase() + n.slice(1));
+      return uppercaseWords.join(' ');
     }
     else {
-      return "";
+      return '';
     }
   }
 }
