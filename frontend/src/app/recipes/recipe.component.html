@@ -1,12 +1,13 @@
 <main role="main" class="container-fluid">
   <h1 class="text-center">{{ updateName(recipe?.name) }}</h1>
   <div class="img">
-      <img class="img-center img-fluid" src="{{ recipe?.image }}" alt="{{ updateName(recipe?.name) }}">
+    <img class="img-center img-fluid" src="{{ recipe?.image }}" alt="{{ updateName(recipe?.name) }}">
   </div>
   <div class="row overview text-center">
     <div class="col-lg-4">
       <span>Servings: </span>
-      <input class="servings-input input-group-text" [(ngModel)]="servingsInput" type="number" onkeydown="return false" min="1" max="24" value="{{ recipe?.servings }}">
+      <input class="servings-input input-group-text" [(ngModel)]="servingsInput" type="number" onkeydown="return false"
+        min="1" max="24" value="{{ recipe?.servings }}">
     </div>
     <div class="col-lg-4">
       <p>Prep: {{ recipe?.prep }}</p>
@@ -19,7 +20,8 @@
     <div class="col-lg-4">
       <h3 class="ingredients-instructions">Ingredients:</h3>
       <ul class="ingredients">
-        <li *ngFor="let ingredient of recipe?.ingredients | calculator:servingsInput:initialServings">{{ ingredient }}</li>
+        <li *ngFor="let ingredient of recipe?.ingredients | calculator:servingsInput:initialServings">{{ ingredient }}
+        </li>
       </ul>
     </div>
     <div class="col-lg-8">
@@ -27,6 +29,9 @@
       <ol class="instructions">
         <li *ngFor="let instruction of recipe?.instructions">{{ instruction }}</li>
       </ol>
+    </div>
+    <div class="col-12">
+      <p class="credit">Credit: <a href="{{ recipe?.credit }}">{{recipe?.credit}}</a></p>
     </div>
   </div>
 </main>
