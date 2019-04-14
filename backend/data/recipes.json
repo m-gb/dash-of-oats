@@ -27,7 +27,8 @@
       "Flip and cook on the other side until golden brown and cooked in the middle. If the pancakes brown before the middle is cooked through, try lowering your heat a bit.",
       "Serve with toppings of your choice."
     ],
-    "image": "assets/images/banana_pancakes.jpg"
+    "image": "assets/images/banana_pancakes.jpg",
+    "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg"
   },
   {
     "name": "chocolate_babka",
@@ -66,7 +67,8 @@
       "Preheat the oven to 160°C fan forced. Bake babka for 40-45 minutes, until golden in appearance. Remove from oven, brush with sugar syrup and leave to cool in the tin for 10 minutes before removing and serving warm.",
       "To make sugar syrup, combine the coconut sugar and water in a small saucepan . Leave to boil over a medium high heat. Once the sugar dissolves remove from heat."
     ],
-    "image": "assets/images/chocolate_babka.jpg"
+    "image": "assets/images/chocolate_babka.jpg",
+    "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg"
   },
   {
     "name": "chocolate_cake",
@@ -95,7 +97,8 @@
       "Bake on the middle rack of the oven for 35 minutes, until an inserted toothpick comes out clean.",
       "Allow to cool. Top with your favorite frosting and enjoy!"
     ],
-    "image": "assets/images/chocolate_cake.jpg"
+    "image": "assets/images/chocolate_cake.jpg",
+    "image_thumbnail": "assets/images/chocolate_cake_thumbnail.jpg"
   },
   {
     "name": "chocolate_chip_cookies",
@@ -122,7 +125,8 @@
       "Preheat the oven to 175 degrees Celsius. Line two rimmed sheet pans with parchment paper. Remove dough from the refrigerator and use an ice cream scoop or a spoon to portion dough into 2-inch mounds. We recommend freezing the balls of dough for 10 minutes before baking as the cookies will retain their shape better while baking.",
       "Sprinkle the balls of dough with coarse-grained sea salt (if freezing, remove balls of dough from the freezer first), and bake for 12 to 13 minutes, or until the edges are just golden. Do not overbake. "
     ],
-    "image": "assets/images/chocolate_chip_cookies.jpg"
+    "image": "assets/images/chocolate_chip_cookies.jpg",
+    "image_thumbnail": "assets/images/chocolate_chip_cookies_thumbnail.jpg"
   },
   {
     "name": "cinnamon_swirl_cake",
@@ -161,7 +165,8 @@
       "Drag a spoon in a circle around the cake, with the spoon placed in the center of the batter. This makes the cinnamon sugar layer curved when the cake bakes.",
       "Bake for 55 minutes, or until a toothpick inserted in the center comes out clean."
     ],
-    "image": "assets/images/cinnamon_swirl_cake.jpg"
+    "image": "assets/images/cinnamon_swirl_cake.jpg",
+    "image_thumbnail": "assets/images/cinnamon_swirl_cake_thumbnail.jpg"
   },
   {
     "name": "energy_bars",
@@ -186,7 +191,8 @@
       "Once loosely blended turn it out on to the baking tray and flatten slightly. Fold the other half of the parchment over the mixture and flatten with your hands. Use a rolling pin to flatten it out completely into a square or rectangle, using your hands to mould and straighten the edges.",
       "Put in the fridge for at least two hours to allow to set. Once set use a knife to cut into bars."
     ],
-    "image": "assets/images/energy_bars.jpg"
+    "image": "assets/images/energy_bars.jpg",
+    "image_thumbnail": "assets/images/energy_bars_thumbnail.jpg"
   },
   {
     "name": "sweet_and_sour_sauce",
@@ -208,7 +214,8 @@
       "Bring to a boil stirring or whisking constantly over medium-high heat until bubbly and thickened (the sauce will continue to thicken more while simmering).",
       "Cool slightly and use immediately or refrigerate."
     ],
-    "image": "assets/images/sweet_and_sour_sauce.jpg"
+    "image": "assets/images/sweet_and_sour_sauce.jpg",
+    "image_thumbnail": "assets/images/sweet_and_sour_sauce_thumbnail.jpg"
   },
   {
     "name": "teriyaki_sauce",
@@ -229,7 +236,8 @@
       "Simmer the sauce for a few minutes until the sauce reduces slightly.",
       "Remove the pan from the heat and allow the teriyaki sauce to cool."
     ],
-    "image": "assets/images/teriyaki_sauce.jpg"
+    "image": "assets/images/teriyaki_sauce.jpg",
+    "image_thumbnail": "assets/images/teriyaki_sauce_thumbnail.jpg"
   },
   {
     "name": "bbq_tempeh_sandwich",
@@ -252,6 +260,7 @@
       "Cook and simmer on medium-low heat for 20-30 minutes.",
       "On toasted bread layer the sliced tomato, romaine leaves, avocado and BBQ tempeh."
     ],
-    "image": "assets/images/bbq_tempeh_sandwich.jpg"
+    "image": "assets/images/bbq_tempeh_sandwich.jpg",
+    "image_thumbnail": "assets/images/bbq_tempeh_sandwich_thumbnail.jpg"
   }
 ]
