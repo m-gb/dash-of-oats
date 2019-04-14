@@ -34,13 +34,11 @@ a:hover {
 
 .container {
     margin: 0 auto;
-    width: 100%;
 }
 
 .footer {
     height: 4rem;
     padding: 1rem;
-    width: 100%;
     span {
         font-size: 0.9rem;
         padding-left: 10rem;
@@ -48,27 +46,16 @@ a:hover {
 }
 
 .recipe {
-    height: 20rem;
-    width: 20rem;
-    img {
-        height: 16rem;
-        width: 20rem;
-    }
-    p {
-        height: 4rem;
-        width: 20rem;
-    }
+    position: relative;
 }
 
-.recipe:hover .recipe-img {
+.recipe:hover {
     opacity: 0.8;
 }
 
 .recipe:hover .overlay {
     background-color: black;
     display: block;
-    height: 16rem;
-    width: 20rem;
     opacity: 0.8;
     transition: 0.5s ease;
 }
@@ -85,7 +72,7 @@ a:hover {
 
 .overlay-text {
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
