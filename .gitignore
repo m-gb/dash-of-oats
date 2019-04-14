@@ -1,8 +1,10 @@
 # docker files
+.dockerignore
 docker-compose.yml
 Dockerfile
 
 # project files
+/data
 dist
 node_modules
 
