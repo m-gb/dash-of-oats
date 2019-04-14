@@ -19,14 +19,14 @@ class App {
   private config(): void {
     const port: number = 3000
     this.app.set('port', process.env.PORT || port)
+    this.app.use(morgan('dev'))
+    this.app.use(errorMiddleware)
     this.app.use(bodyParser.json())
     this.app.use(cors())
-    this.app.use(errorMiddleware)
-    this.app.use(morgan('dev'))
   }
 
   private db(): void {
-    const uri: string = "mongodb://127.0.0.1:27017/recipes"
+    const uri: string = "mongodb://localhost:27017/recipes"
     mongoose.connect(uri, { useNewUrlParser: true }).then(
       () => { },
       err => { console.log(err.message) }
