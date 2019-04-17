@@ -270,5 +270,66 @@
     "image": "assets/images/bbq_tempeh_sandwich.jpg",
     "image_thumbnail": "assets/images/bbq_tempeh_sandwich_thumbnail.jpg",
     "credit": "http://sweetpotatosoul.com/2017/09/bbq-tempeh-sandwich.html"
+  },
+  {
+    "name": "banana_bread",
+    "category": "breakfasts",
+    "servings": "1",
+    "prep": "10 min",
+    "cooking": "25 min",
+    "ingredients": [
+      "1 cups white flour",
+      "1/2 tsp baking soda",
+      "1/2 tsp salt",
+      "2/3 cups water",
+      "2/3 cups white sugar",
+      "1/3 cups overripe mashed banana",
+      "1/4 cups nut butter/oil/additional banana",
+      "2 tsp vanilla extract",
+      "1/2 cups chocolate chips"
+    ],
+    "instructions": [
+      "Line a loaf pan with parchment. Preheat oven to 170C.",
+      "Combine dry ingredients, and stir very well. Evenly mix in remaining ingredients.",
+      "Pour into prepared pan. Sprinkle chips on top if desired. Bake on the center rack 25 minutes. Let cool completely."
+    ],
+    "image": "assets/images/banana_bread.jpg",
+    "image_thumbnail": "assets/images/banana_bread_thumbnail.jpg",
+    "credit": "https://chocolatecoveredkatie.com/2018/09/24/chocolate-banana-cake-recipe/"
+  },
+  {
+    "name": "chocolate_peanut_butter_muffins",
+    "category": "desserts",
+    "servings": "6",
+    "prep": "5 min",
+    "cooking": "20 min",
+    "ingredients": [
+      "1/2 cups buckwheat, soaked overnight and drained",
+      "2 tbs mashed apple",
+      "1/2 cups plant-based milk",
+      "1/2 tsp baking powder",
+      "1/2 tsp baking soda",
+      "2 tbs cocoa powder",
+      "2 tbs coconut oil",
+      "6 medjool dates",
+      "1/8 tsp of salt",
+      "2 tbs maple syrup/brown sugar",
+      "Toppings:",
+      "1 tbs chocolate chips",
+      "3 tsp peanut butter"
+    ],
+    "instructions": [
+      "Preheat the oven to 175C.",
+      "Wash the buckwheat until the water comes out clear and drain.",
+      "Place the buckwheat with the rest of the ingredients in a blender (without the toppings).",
+      "Process into a smooth batter.",
+      "Transfer into 6 muffin cups.",
+      "Top with chocolate chips and peanut butter.",
+      "Bake for 15-20 minutes until a toothpick comes out clean.",
+      "Let cool completely."
+    ],
+    "image": "assets/images/chocolate_peanut_butter_muffins.jpg",
+    "image_thumbnail": "assets/images/chocolate_peanut_butter_muffins_thumbnail.jpg",
+    "credit": "https://tivoneat.co.il/flourless-vegan-muffins/"
   }
 ]
