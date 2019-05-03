@@ -276,9 +276,9 @@
     "category": "breakfasts",
     "servings": "1",
     "prep": "10 min",
-    "cooking": "25 min",
+    "cooking": "40 min",
     "ingredients": [
-      "1 cups white flour",
+      "2 cups white flour",
       "1/2 tsp baking soda",
       "1/2 tsp salt",
       "2/3 cups water",
@@ -291,7 +291,7 @@
     "instructions": [
       "Line a loaf pan with parchment. Preheat oven to 170C.",
       "Combine dry ingredients, and stir very well. Evenly mix in remaining ingredients.",
-      "Pour into prepared pan. Sprinkle chips on top if desired. Bake on the center rack 25 minutes. Let cool completely."
+      "Pour into prepared pan. Sprinkle chips on top if desired. Bake on the center rack 40 minutes. Let cool completely."
     ],
     "image": "assets/images/banana_bread.jpg",
     "image_thumbnail": "assets/images/banana_bread_thumbnail.jpg",
