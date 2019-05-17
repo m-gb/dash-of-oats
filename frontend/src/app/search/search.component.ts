@@ -10,6 +10,7 @@ import { RecipeService } from '../services/recipe.service';
 export class SearchComponent implements OnInit {
   clickedOutside: boolean = true;
   recipes: IRecipe[];
+  searchText: string;
 
   constructor(private rs: RecipeService) { }
 

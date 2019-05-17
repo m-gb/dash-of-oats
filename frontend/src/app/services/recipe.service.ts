@@ -9,7 +9,8 @@ export interface IRecipe {
   cooking: string,
   ingredients: string[],
   instructions: string[],
-  image: string
+  image: string,
+  credit: string
 }
 
 @Injectable({
