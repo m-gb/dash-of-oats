@@ -298,7 +298,7 @@
     "credit": "https://chocolatecoveredkatie.com/2018/09/24/chocolate-banana-cake-recipe/"
   },
   {
-    "name": "chocolate_peanut_butter_muffins",
+    "name": "chocolate_pb_muffins",
     "category": "desserts",
     "servings": "6",
     "prep": "5 min",
@@ -328,8 +328,34 @@
       "Bake for 15-20 minutes until a toothpick comes out clean.",
       "Let cool completely."
     ],
-    "image": "assets/images/chocolate_peanut_butter_muffins.jpg",
-    "image_thumbnail": "assets/images/chocolate_peanut_butter_muffins_thumbnail.jpg",
+    "image": "assets/images/chocolate_pb_muffins.jpg",
+    "image_thumbnail": "assets/images/chocolate_pb_muffins_thumbnail.jpg",
     "credit": "https://tivoneat.co.il/flourless-vegan-muffins/"
+  },
+  {
+    "name": "baked_potato_fries",
+    "category": "lunches",
+    "servings": "6",
+    "prep": "5 min",
+    "cooking": "35 min",
+    "ingredients": [
+      "3 lbs yellow potatoes (or russet potatoes)",
+      "water (for steaming)",
+      "3 tbs nutritional yeast",
+      "1 tsp chili powder",
+      "1/2 tsp garlic powder",
+      "1/2 tsp sea salt"
+    ],
+    "instructions": [
+      "Preheat oven to 218C and line two (or more as needed) baking sheets with parchment paper.",
+      "Slice potatoes into small wedges about 1/4- to 1/2-inch wide. Place in a steamer basket or large colander set over a pot of boiling water. Cover and then steam approximately 5 minutes until slightly tender but not cooked.",
+      "Transfer to baking sheets and top with nutritional yeast, chili powder, garlic powder, sea salt and any other desired seasonings. Toss gently to coat.",
+      "Arrange in an even layer on baking sheet, trying not to overlap, so that fries can get crispy. The more room they have, the crispier they will become. Use two baking sheets if needed.",
+      "Bake for 15 minutes. Then remove from oven and increase heat to 232 C. Flip to ensure even baking on both sides and bake for an additional 10-15 minutes or until crispy and golden brown.",
+      "Serve hot! They're delicious as is, but they're elevated tossed in fresh herbs and garlic (optional) and served with ketchup or guacamole. Best fresh. Store leftovers covered in the refrigerator up to 4 days. Reheat in a 190C oven until hot."
+    ],
+    "image": "assets/images/baked_potato_fries.jpg",
+    "image_thumbnail": "assets/images/baked_potato_fries_thumbnail.jpg",
+    "credit": "https://minimalistbaker.com/cheesy-chili-baked-potato-fries-oil-free/"
   }
 ]
