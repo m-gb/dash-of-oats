@@ -1,6 +1,6 @@
 <main role="main" class="container-fluid">
   <h1>Recipes</h1>
-  <div class="row">
+  <div class="row" style="justify-content: center">
     <div class="col-lg-auto col-auto" *ngFor="let recipe of recipes">
       <a [routerLink]="['/recipes', recipe.name]">
         <div class="img recipe">
