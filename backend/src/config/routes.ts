@@ -4,6 +4,10 @@ import { HttpException } from '../exceptions/http'
 
 export const router = express.Router()
 
+router.route('/').get((req, res, next) => {
+  res.status(200).send('Dash of Oats API')
+})
+
 // Returns all recipes in json format
 router.route('/api/v1/recipes').get((req, res, next) => {
   Recipe.find((err: any, recipes: IRecipeModel[]) => {
