@@ -10,7 +10,7 @@
         <li class="nav-item dropdown px-1">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Categories</a>
-          <ul class="dropdown-menu bg-dark">
+          <ul class="dropdown-menu">
             <li *ngFor="let category of categories">
               <a class="dropdown-item" [routerLink]="['/categories', category]">{{ updateName(category) }}</a>
             </li>

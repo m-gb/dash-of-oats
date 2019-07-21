@@ -1,3 +1,7 @@
+.dropdown-menu {
+  background-color: #343a40 !important;
+}
+
 .dropdown:hover .dropdown-menu {
   display: block;
   margin-top: 0;
@@ -22,10 +26,16 @@
 
 .navbar {
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-  padding: 0;
+  padding: 0 1rem;
 }
 
 @media screen and (max-width: 576px) {
+  .dropdown-menu {
+    background-color: white !important;
+  }
+  .dropdown-item {
+    color: black !important;
+  }
   .dropdown-menu,
   .navbar-toggler {
     border: none;
