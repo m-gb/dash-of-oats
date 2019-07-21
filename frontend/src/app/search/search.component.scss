@@ -8,7 +8,8 @@
     position: absolute;
     padding: 0;
     width: 350px !important;
-    border: 1px solid black;
+    border-left: 1px solid lightgrey;
+    border-right: 1px solid lightgrey;
     z-index: 1;
     li {
         list-style: none;
