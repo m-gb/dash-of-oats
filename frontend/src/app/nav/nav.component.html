@@ -7,17 +7,17 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="nav navbar-nav mr-auto">
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown px-1">
           <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
             aria-expanded="false">Categories</a>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu bg-dark">
             <li *ngFor="let category of categories">
               <a class="dropdown-item" [routerLink]="['/categories', category]">{{ updateName(category) }}</a>
             </li>
           </ul>
         </li>
-        <li class="nav-item"><a routerLink="/about" class="nav-link">About</a></li>
-        <li class="nav-item"><a routerLink="/contact" class="nav-link">Contact</a></li>
+        <li class="nav-item px-1"><a routerLink="/about" class="nav-link">About</a></li>
+        <li class="nav-item px-1"><a routerLink="/contact" class="nav-link">Contact</a></li>
       </ul>
       <app-search></app-search>
     </div>
