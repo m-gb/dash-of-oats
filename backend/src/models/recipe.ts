@@ -14,7 +14,8 @@ export var RecipeSchema: Schema = new Schema({
   instructions: [String],
   image: String,
   image_thumbnail: String,
-  credit: String
+  credit: String,
+  created_at: String
 })
 
 export const Recipe: Model<IRecipeModel> = model<IRecipeModel>('Recipe', RecipeSchema)

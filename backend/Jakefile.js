@@ -18,10 +18,30 @@ task('populate', [], () => {
         else {
           console.log("The recipes collection has been populated.")
         }
-        mongoose.connection.close()
-      })
-    },
-    err => { console.log(err.message) }
+      },
+        (err) => { console.log(err.message) }
+      )
+    }
+  ).then(
+    () => {
+      today = new Date()
+      counter = 1
+      mongoose.connection.db.collection('recipes').find().forEach(
+        (recipe) => {
+          modifiedDate = new Date().setDate(today.getDate() - (counter++))
+          mongoose.connection.db.collection('recipes').updateOne(
+            { "name": recipe.name },
+            {
+              $set: { "created_at": modifiedDate.toString() }
+            }
+          )
+        },
+        () => {
+          console.log("The recipes collection has been updated with dates.")
+          mongoose.connection.close()
+        }
+      )
+    }
   )
 })
 
@@ -37,9 +57,12 @@ task('drop', [], () => {
         else {
           console.log("The recipes collection has been dropped.")
         }
-        mongoose.connection.close()
       })
     },
-    err => { console.log(err.message) }
+    (err) => { console.log(err.message) }
+  ).then(
+    () => {
+      mongoose.connection.close()
+    }
   )
 })

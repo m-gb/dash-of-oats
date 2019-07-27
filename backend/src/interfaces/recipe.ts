@@ -9,5 +9,6 @@ export interface IRecipe {
   instructions: string[],
   image: string,
   image_thumbnail: string,
-  credit: string
+  credit: string,
+  created_at: string
 }

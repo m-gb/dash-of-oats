@@ -30,7 +30,8 @@
     ],
     "image": "assets/images/banana_pancakes.jpg",
     "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
-    "credit": "https://www.kitchentreaty.com/gluten-free-vegan-banana-oat-blender-pancakes/"
+    "credit": "https://www.kitchentreaty.com/gluten-free-vegan-banana-oat-blender-pancakes/",
+    "created_at": ""
   },
   {
     "name": "chocolate_babka",
@@ -72,7 +73,8 @@
     ],
     "image": "assets/images/chocolate_babka.jpg",
     "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg",
-    "credit": "https://www.onegreenplanet.org/vegan-recipe/chocolatey-babka/"
+    "credit": "https://www.onegreenplanet.org/vegan-recipe/chocolatey-babka/",
+    "created_at": ""
   },
   {
     "name": "chocolate_cake",
@@ -104,7 +106,8 @@
     ],
     "image": "assets/images/chocolate_cake.jpg",
     "image_thumbnail": "assets/images/chocolate_cake_thumbnail.jpg",
-    "credit": "https://tiphero.com/chocolate-crazy-cake"
+    "credit": "https://tiphero.com/chocolate-crazy-cake",
+    "created_at": ""
   },
   {
     "name": "chocolate_chip_cookies",
@@ -134,7 +137,8 @@
     ],
     "image": "assets/images/chocolate_chip_cookies.jpg",
     "image_thumbnail": "assets/images/chocolate_chip_cookies_thumbnail.jpg",
-    "credit": "https://food52.com/recipes/39132-ovenly-s-secretly-vegan-salted-chocolate-chip-cookies"
+    "credit": "https://food52.com/recipes/39132-ovenly-s-secretly-vegan-salted-chocolate-chip-cookies",
+    "created_at": ""
   },
   {
     "name": "cinnamon_swirl_cake",
@@ -176,7 +180,8 @@
     ],
     "image": "assets/images/cinnamon_swirl_cake.jpg",
     "image_thumbnail": "assets/images/cinnamon_swirl_cake_thumbnail.jpg",
-    "credit": "https://www.savoringspoon.com/cinnamon-swirl-bundt-cake/"
+    "credit": "https://www.savoringspoon.com/cinnamon-swirl-bundt-cake/",
+    "created_at": ""
   },
   {
     "name": "energy_bars",
@@ -204,7 +209,8 @@
     ],
     "image": "assets/images/energy_bars.jpg",
     "image_thumbnail": "assets/images/energy_bars_thumbnail.jpg",
-    "credit": "https://saretaskitchen.wordpress.com/2016/05/28/oat-and-date-energy-bars-recipe/"
+    "credit": "https://saretaskitchen.wordpress.com/2016/05/28/oat-and-date-energy-bars-recipe/",
+    "created_at": ""
   },
   {
     "name": "sweet_and_sour_sauce",
@@ -228,7 +234,8 @@
     ],
     "image": "assets/images/sweet_and_sour_sauce.jpg",
     "image_thumbnail": "assets/images/sweet_and_sour_sauce_thumbnail.jpg",
-    "credit": "https://natashaskitchen.com/sweet-and-sour-sauce-recipe/"
+    "credit": "https://natashaskitchen.com/sweet-and-sour-sauce-recipe/",
+    "created_at": ""
   },
   {
     "name": "teriyaki_sauce",
@@ -252,7 +259,8 @@
     ],
     "image": "assets/images/teriyaki_sauce.jpg",
     "image_thumbnail": "assets/images/teriyaki_sauce_thumbnail.jpg",
-    "credit": "https://www.thespruceeats.com/japanese-restaurant-style-teriyaki-sauce-recipe-2031569"
+    "credit": "https://www.thespruceeats.com/japanese-restaurant-style-teriyaki-sauce-recipe-2031569",
+    "created_at": ""
   },
   {
     "name": "bbq_tempeh_sandwich",
@@ -278,7 +286,8 @@
     ],
     "image": "assets/images/bbq_tempeh_sandwich.jpg",
     "image_thumbnail": "assets/images/bbq_tempeh_sandwich_thumbnail.jpg",
-    "credit": "http://sweetpotatosoul.com/2017/09/bbq-tempeh-sandwich.html"
+    "credit": "http://sweetpotatosoul.com/2017/09/bbq-tempeh-sandwich.html",
+    "created_at": ""
   },
   {
     "name": "banana_bread",
@@ -305,7 +314,8 @@
     ],
     "image": "assets/images/banana_bread.jpg",
     "image_thumbnail": "assets/images/banana_bread_thumbnail.jpg",
-    "credit": "https://chocolatecoveredkatie.com/2018/09/24/chocolate-banana-cake-recipe/"
+    "credit": "https://chocolatecoveredkatie.com/2018/09/24/chocolate-banana-cake-recipe/",
+    "created_at": ""
   },
   {
     "name": "chocolate_pb_muffins",
@@ -341,7 +351,8 @@
     ],
     "image": "assets/images/chocolate_pb_muffins.jpg",
     "image_thumbnail": "assets/images/chocolate_pb_muffins_thumbnail.jpg",
-    "credit": "https://tivoneat.co.il/flourless-vegan-muffins/"
+    "credit": "https://tivoneat.co.il/flourless-vegan-muffins/",
+    "created_at": ""
   },
   {
     "name": "baked_potato_fries",
@@ -368,6 +379,7 @@
     ],
     "image": "assets/images/baked_potato_fries.jpg",
     "image_thumbnail": "assets/images/baked_potato_fries_thumbnail.jpg",
-    "credit": "https://minimalistbaker.com/cheesy-chili-baked-potato-fries-oil-free/"
+    "credit": "https://minimalistbaker.com/cheesy-chili-baked-potato-fries-oil-free/",
+    "created_at": ""
   }
 ]
