@@ -2,18 +2,19 @@ import { TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
 import { of } from 'rxjs';
 
-import { RecipeService } from './recipe.service';
+import { RecipeService, IRecipe } from './recipe.service';
 
 describe('RecipeService', () => {
   let rs: RecipeService;
   let response: Object;
-  const allRecipes = [
+  const allRecipes: IRecipe[] = [
     {
       "name": "banana_pancakes",
       "category": "breakfasts",
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
+      "description": "description 1",
       "ingredients": [
         "Ingredient 1",
         "Ingredient 2"
@@ -22,7 +23,9 @@ describe('RecipeService', () => {
         "Instruction 1",
         "Instruction 2"
       ],
-      "image": "assets/images/banana_pancakes.jpg"
+      "image": "assets/images/banana_pancakes.jpg",
+      "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
+      "credit": "https://dashofoats.xyz"
     },
     {
       "name": "chocolate_babka",
@@ -30,6 +33,7 @@ describe('RecipeService', () => {
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
+      "description": "description 2",
       "ingredients": [
         "Ingredient 1",
         "Ingredient 2"
@@ -38,16 +42,19 @@ describe('RecipeService', () => {
         "Instruction 1",
         "Instruction 2"
       ],
-      "image": "assets/images/chocolate_babka.jpg"
+      "image": "assets/images/chocolate_babka.jpg",
+      "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg",
+      "credit": "https://dashofoats.xyz"
     }
   ];
-  const oneRecipe = [
+  const oneRecipe: IRecipe[] = [
     {
       "name": "banana_pancakes",
       "category": "breakfasts",
       "servings": "1",
       "prep": "10 min",
       "cooking": "10 min",
+      "description": "description 1",
       "ingredients": [
         "Ingredient 1",
         "Ingredient 2"
@@ -56,7 +63,9 @@ describe('RecipeService', () => {
         "Instruction 1",
         "Instruction 2"
       ],
-      "image": "assets/images/recipe1.jpg"
+      "image": "assets/images/recipe1.jpg",
+      "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
+      "credit": "https://dashofoats.xyz"
     }
   ];
 

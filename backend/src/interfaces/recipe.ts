@@ -4,7 +4,10 @@ export interface IRecipe {
   servings: string,
   prep: string,
   cooking: string,
+  description: string,
   ingredients: string[],
   instructions: string[],
-  image: string
+  image: string,
+  image_thumbnail: string,
+  credit: string
 }

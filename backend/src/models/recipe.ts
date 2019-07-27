@@ -9,9 +9,12 @@ export var RecipeSchema: Schema = new Schema({
   servings: Number,
   prep: String,
   cooking: String,
+  description: String,
   ingredients: [String],
   instructions: [String],
-  image: String
+  image: String,
+  image_thumbnail: String,
+  credit: String
 })
 
 export const Recipe: Model<IRecipeModel> = model<IRecipeModel>('Recipe', RecipeSchema)

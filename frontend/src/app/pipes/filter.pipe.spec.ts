@@ -30,13 +30,18 @@ describe('FilterPipe', () => {
           "servings": "1",
           "prep": "10 min",
           "cooking": "10 min",
+          "description": "description 1",
           "ingredients": [
-            "Ingredient 1"
+            "Ingredient 1",
+            "Ingredient 2"
           ],
           "instructions": [
-            "Instruction 1"
+            "Instruction 1",
+            "Instruction 2"
           ],
-          "image": "assets/images/banana_pancakes.jpg"
+          "image": "assets/images/banana_pancakes.jpg",
+          "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
+          "credit": "https://dashofoats.xyz"
         },
         {
           "name": "chocolate_babka",
@@ -44,13 +49,18 @@ describe('FilterPipe', () => {
           "servings": "1",
           "prep": "10 min",
           "cooking": "10 min",
+          "description": "description 2",
           "ingredients": [
-            "Ingredient 1"
+            "Ingredient 1",
+            "Ingredient 2"
           ],
           "instructions": [
-            "Instruction 1"
+            "Instruction 1",
+            "Instruction 2"
           ],
-          "image": "assets/images/chocolate_babka.jpg"
+          "image": "assets/images/chocolate_babka.jpg",
+          "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg",
+          "credit": "https://dashofoats.xyz"
         }
       ];
       const expectedResult: IRecipe[] = [
@@ -60,13 +70,18 @@ describe('FilterPipe', () => {
           "servings": "1",
           "prep": "10 min",
           "cooking": "10 min",
+          "description": "description 1",
           "ingredients": [
-            "Ingredient 1"
+            "Ingredient 1",
+            "Ingredient 2"
           ],
           "instructions": [
-            "Instruction 1"
+            "Instruction 1",
+            "Instruction 2"
           ],
-          "image": "assets/images/banana_pancakes.jpg"
+          "image": "assets/images/recipe1.jpg",
+          "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
+          "credit": "https://dashofoats.xyz"
         }
       ];
       const searchText: string = 'banana';
