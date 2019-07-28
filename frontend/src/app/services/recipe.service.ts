@@ -20,12 +20,16 @@ export interface IRecipe {
   providedIn: 'root'
 })
 export class RecipeService {
-  private uri: string = 'http://localhost:3000/api/v1';
+  private uri: string = 'https://api.dashofoats.xyz/api/v1';
 
   constructor(private http: HttpClient) { }
 
   public getRecipes() {
     return this.http.get(`${this.uri}/recipes`);
+  }
+
+  public getLatestRecipe() {
+    return this.http.get(`${this.uri}/recipes/latest`);
   }
 
   public getRecipe(name: string) {

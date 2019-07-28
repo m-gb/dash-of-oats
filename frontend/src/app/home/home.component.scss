@@ -1,0 +1,64 @@
+.img-latest {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+
+.text-latest {
+  color: black;
+  font-size: 1.2rem;
+}
+
+.date-latest {
+  color: black;
+  font-size: 1rem;
+}
+
+@media (min-height: 800px) and (min-width: 1200px) {
+  .img-latest {
+    height: 80vh;
+    width: 80%;
+    display: block;
+    margin: auto;
+    filter: brightness(80%);
+  }
+  
+  .text-latest {
+    position: absolute;
+    top: 82%;
+    left: 25%;
+    transform: translate(-25%, -82%);
+    color: white;
+    font-size: 1.4rem;
+  }
+  
+  .date-latest {
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-25%, -85%);
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+h1 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1:before,
+h1:after {
+  content: "";
+  border-top: 1px solid;
+  margin: 0 20px 0 0;
+  flex: 1 0 20px;
+}
+
+h1:after {
+  margin: 0 0 0 20px;
+}

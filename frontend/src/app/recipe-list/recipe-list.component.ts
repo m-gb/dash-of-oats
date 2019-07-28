@@ -1,6 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { IRecipe } from '../services/recipe.service';
-import { RecipeService } from '../services/recipe.service';
+import { IRecipe, RecipeService } from '../services/recipe.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -23,7 +22,7 @@ export class RecipeListComponent implements OnInit {
         }
         else {
           this.rs.getRecipes().subscribe((data: IRecipe[]) => {
-            this.recipes = data;
+            this.recipes = data.slice(1, -1);
           });
         }
       });

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
-import { IRecipe } from '../services/recipe.service';
+import { IRecipe, RecipeService } from '../services/recipe.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -8,12 +9,19 @@ import { IRecipe } from '../services/recipe.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  recipes: IRecipe[];
+  recipe: IRecipe;
 
-  constructor(private titleService: Title) { }
+  constructor(private rs: RecipeService, private titleService: Title, private router: Router) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Dash of Oats');
+    this.rs.getLatestRecipe().subscribe((data: IRecipe[]) => {
+      this.titleService.setTitle('Dash of Oats');
+      if (data.length === 0) {
+        this.router.navigate(['/not-found']);
+      }
+      else {
+        this.recipe = data[0];
+      }
+    });
   }
-
 }

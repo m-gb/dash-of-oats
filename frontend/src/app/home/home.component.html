@@ -1,3 +1,9 @@
 <main role="main" class="container-fluid">
+  <a [routerLink]="['/recipes', recipe?.name || not-found]" class="img-home">
+    <img class="img-latest" src="{{ recipe?.image }}" alt="{{ this.rs.editName(recipe?.name) }}" />
+    <p class="text-latest">{{ this.rs.editName(recipe?.name) }}</p>
+    <p class="date-latest"><i class="fas fa-calendar-alt"></i><span class="pl-3">{{ recipe?.created_at | formatDate }}</span></p>
+  </a>
+  <h1 class="pt-5">Recipes</h1>
   <app-recipe-list></app-recipe-list>
 </main>
