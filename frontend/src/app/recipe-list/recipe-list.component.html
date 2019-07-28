@@ -1,9 +1,9 @@
-<div class="row" style="justify-content: center">
-  <div class="col-lg-auto col-auto pb-4" *ngFor="let recipe of recipes">
-    <div class="card" style="width: 18rem;">
+<div class="row">
+  <div class="col-lg-4 col-auto pb-4" *ngFor="let recipe of recipes">
+    <div class="card">
       <a [routerLink]="['/recipes', recipe.name]">
-        <div class="recipe">
-          <img class="card-img-top" src="{{ recipe?.image_thumbnail }}" alt="{{ this.rs.editName(recipe?.name) }}">
+        <div class="recipe img">
+          <img class="card-img-top img-fluid" src="{{ recipe?.image_thumbnail }}" alt="{{ this.rs.editName(recipe?.name) }}">
           <div class="overlay">
             <p class="overlay-text">Get started!</p>
           </div>
