@@ -20,6 +20,18 @@ router.route('/api/v1/recipes').get((req, res, next) => {
   })
 })
 
+// Returns the latest recipe in json format
+router.route('/api/v1/recipes/latest').get((req, res, next) => {
+  Recipe.find((err: any, recipe: IRecipeModel) => {
+    if (err) {
+      next(new HttpException(500, err.message))
+    }
+    else {
+      res.status(200).json(recipe)
+    }
+  }).sort('-created_at').limit(1)
+})
+
 // Returns a recipe based on the name in json format
 router.route('/api/v1/recipes/:name').get((req, res, next) => {
   Recipe.findOne({ name: req.params.name }, (err: any, recipe: IRecipeModel) => {
