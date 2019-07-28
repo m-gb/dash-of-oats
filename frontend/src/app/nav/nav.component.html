@@ -12,7 +12,7 @@
             aria-expanded="false">Categories</a>
           <ul class="dropdown-menu">
             <li *ngFor="let category of categories">
-              <a class="dropdown-item" [routerLink]="['/categories', category]">{{ updateName(category) }}</a>
+              <a class="dropdown-item" [routerLink]="['/categories', category]">{{ this.rs.editName(category) }}</a>
             </li>
           </ul>
         </li>

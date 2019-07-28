@@ -1,8 +1,8 @@
 <main role="main" class="container-fluid">
-  <h1 class="text-center pb-1">{{ updateName(recipe?.name) }}</h1>
+  <h1 class="text-center pb-1">{{ this.rs.editName(recipe?.name) }}</h1>
   <p class="text-center"><i class="calendar fas fa-calendar-alt"></i><span class="pl-3">{{ recipe?.created_at | formatDate }}</span></p>
   <div class="img">
-    <img class="img-center img-fluid" src="{{ recipe?.image }}" alt="{{ updateName(recipe?.name) }}">
+    <img class="img-center img-fluid" src="{{ recipe?.image }}" alt="{{ this.rs.editName(recipe?.name) }}">
   </div>
   <div class="row overview text-center">
     <div class="col-lg-4">

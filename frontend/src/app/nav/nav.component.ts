@@ -17,8 +17,4 @@ export class NavComponent implements OnInit {
       this.categories = data.sort();
     });
   }
-
-  updateName(name: string): string {
-    return this.rs.editName(name);
-  }
 }

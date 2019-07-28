@@ -23,16 +23,12 @@ export class RecipeComponent implements OnInit {
         if (data) {
           this.recipe = data;
           this.initialServings = data.servings;
-          this.titleService.setTitle('Dash of Oats - ' + this.updateName(this.recipe.name));
+          this.titleService.setTitle(`Dash of Oats - ${this.rs.editName(this.recipe.name)}`);
         }
         else {
           this.router.navigate(['/not-found']);
         }
       });
     });
-  }
-
-  updateName(name: string): string {
-    return this.rs.editName(name);
   }
 }
