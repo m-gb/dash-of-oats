@@ -1,0 +1,13 @@
+<div class="row" style="justify-content: center">
+  <div class="col-lg-auto col-auto" *ngFor="let recipe of recipes">
+    <a [routerLink]="['/recipes', recipe.name]">
+      <div class="img recipe">
+        <img class="img-fluid" src="{{ recipe.image_thumbnail }}" alt="{{ this.rs.editName(recipe.name) }}">
+        <div class="overlay">
+          <p class="overlay-text">Get started!</p>
+        </div>
+      </div>
+      <p class="text-center">{{ this.rs.editName(recipe.name) }}</p>
+    </a>
+  </div>
+</div>
