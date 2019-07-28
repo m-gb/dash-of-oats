@@ -1,13 +1,22 @@
 <div class="row" style="justify-content: center">
-  <div class="col-lg-auto col-auto" *ngFor="let recipe of recipes">
-    <a [routerLink]="['/recipes', recipe.name]">
-      <div class="img recipe">
-        <img class="img-fluid" src="{{ recipe.image_thumbnail }}" alt="{{ this.rs.editName(recipe.name) }}">
-        <div class="overlay">
-          <p class="overlay-text">Get started!</p>
+  <div class="col-lg-auto col-auto pb-4" *ngFor="let recipe of recipes">
+    <div class="card" style="width: 18rem;">
+      <a [routerLink]="['/recipes', recipe.name]">
+        <div class="recipe">
+          <img class="card-img-top" src="{{ recipe?.image_thumbnail }}" alt="{{ this.rs.editName(recipe?.name) }}">
+          <div class="overlay">
+            <p class="overlay-text">Get started!</p>
+          </div>
         </div>
+        <div class="card-body pb-0">
+          <h5 class="card-title">{{ this.rs.editName(recipe?.name) }}</h5>
+        </div>
+      </a>
+      <div class="card-body">
+        <h6 class="card-subtitle pb-2"><i class="calendar fas fa-calendar-alt"></i><span
+            class="pl-3">{{ recipe?.created_at | formatDate }}</span></h6>
+        <p class="card-text">{{ recipe?.description | cutDescription }}</p>
       </div>
-      <p class="text-center">{{ this.rs.editName(recipe.name) }}</p>
-    </a>
+    </div>
   </div>
 </div>

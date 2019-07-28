@@ -20,6 +20,7 @@ import { CalculatorPipe } from './pipes/calculator.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { FormatDatePipe } from './pipes/format-date.pipe';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
+import { CutDescriptionPipe } from './pipes/cut-description.pipe';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { RecipeListComponent } from './recipe-list/recipe-list.component';
     CalculatorPipe,
     NotFoundComponent,
     FormatDatePipe,
-    RecipeListComponent
+    RecipeListComponent,
+    CutDescriptionPipe
   ],
   imports: [
     BrowserModule,
