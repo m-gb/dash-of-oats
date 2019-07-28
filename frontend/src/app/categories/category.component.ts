@@ -13,7 +13,8 @@ export class CategoryComponent implements OnInit {
   category: string;
   recipes: IRecipe[];
 
-  constructor(private rs: RecipeService, private titleService: Title, private route: ActivatedRoute, private router: Router) { }
+  constructor(public rs: RecipeService, private titleService: Title,
+              private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {

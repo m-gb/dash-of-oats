@@ -11,7 +11,7 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   recipe: IRecipe;
 
-  constructor(private rs: RecipeService, private titleService: Title, private router: Router) { }
+  constructor(public rs: RecipeService, private titleService: Title, private router: Router) { }
 
   ngOnInit() {
     this.rs.getLatestRecipe().subscribe((data: IRecipe[]) => {

@@ -14,7 +14,7 @@ export class RecipeComponent implements OnInit {
   initialServings: string;
   servingsInput: number;
 
-  constructor(private titleService: Title, private rs: RecipeService,
+  constructor(public rs: RecipeService, private titleService: Title,
               private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
