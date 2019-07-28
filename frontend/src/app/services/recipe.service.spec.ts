@@ -25,7 +25,8 @@ describe('RecipeService', () => {
       ],
       "image": "assets/images/banana_pancakes.jpg",
       "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
-      "credit": "https://dashofoats.xyz"
+      "credit": "https://dashofoats.xyz",
+      "created_at": ""
     },
     {
       "name": "chocolate_babka",
@@ -44,7 +45,8 @@ describe('RecipeService', () => {
       ],
       "image": "assets/images/chocolate_babka.jpg",
       "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg",
-      "credit": "https://dashofoats.xyz"
+      "credit": "https://dashofoats.xyz",
+      "created_at": ""
     }
   ];
   const oneRecipe: IRecipe[] = [
@@ -65,7 +67,8 @@ describe('RecipeService', () => {
       ],
       "image": "assets/images/recipe1.jpg",
       "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
-      "credit": "https://dashofoats.xyz"
+      "credit": "https://dashofoats.xyz",
+      "created_at": ""
     }
   ];
 

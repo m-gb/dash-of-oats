@@ -41,7 +41,8 @@ describe('FilterPipe', () => {
           ],
           "image": "assets/images/banana_pancakes.jpg",
           "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
-          "credit": "https://dashofoats.xyz"
+          "credit": "https://dashofoats.xyz",
+          "created_at": ""
         },
         {
           "name": "chocolate_babka",
@@ -60,7 +61,8 @@ describe('FilterPipe', () => {
           ],
           "image": "assets/images/chocolate_babka.jpg",
           "image_thumbnail": "assets/images/chocolate_babka_thumbnail.jpg",
-          "credit": "https://dashofoats.xyz"
+          "credit": "https://dashofoats.xyz",
+          "created_at": ""
         }
       ];
       const expectedResult: IRecipe[] = [
@@ -79,9 +81,10 @@ describe('FilterPipe', () => {
             "Instruction 1",
             "Instruction 2"
           ],
-          "image": "assets/images/recipe1.jpg",
+          "image": "assets/images/banana_pancakes.jpg",
           "image_thumbnail": "assets/images/banana_pancakes_thumbnail.jpg",
-          "credit": "https://dashofoats.xyz"
+          "credit": "https://dashofoats.xyz",
+          "created_at": ""
         }
       ];
       const searchText: string = 'banana';

@@ -18,6 +18,7 @@ import { SearchComponent } from './search/search.component';
 import { FilterPipe } from './pipes/filter.pipe';
 import { CalculatorPipe } from './pipes/calculator.pipe';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { FormatDatePipe } from './pipes/format-date.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SearchComponent,
     FilterPipe,
     CalculatorPipe,
-    NotFoundComponent
+    NotFoundComponent,
+    FormatDatePipe
   ],
   imports: [
     BrowserModule,
