@@ -5,6 +5,7 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { RecipeComponent } from './recipe.component';
 import { CalculatorPipe } from '../pipes/calculator.pipe';
+import { FormatDatePipe } from '../pipes/format-date.pipe';
 import { NotFoundComponent } from '../not-found/not-found.component';
 
 describe('RecipeComponent', () => {
@@ -13,7 +14,7 @@ describe('RecipeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CalculatorPipe, NotFoundComponent, RecipeComponent ],
+      declarations: [ CalculatorPipe, FormatDatePipe, NotFoundComponent, RecipeComponent ],
       imports: [ FormsModule, HttpClientModule, RouterTestingModule ]
     })
     .compileComponents();
