@@ -77,36 +77,33 @@
     "created_at": ""
   },
   {
-    "name": "chocolate_cake",
-    "category": "desserts",
+    "name": "pizza_crust",
+    "category": "lunches",
     "servings": "1",
-    "prep": "30 min",
-    "cooking": "35 min",
-    "description": "Prepare yourself. This one-pot chocolate cake is indeed crazy— for the BEST reasons. No Bowls. No eggs. No milk. No butter or dairy of any kind. Just simple ingredients, easy clean-up, and delicious fudgy taste. Watch to see how this delectable dessert is possible, then give it a try!",
+    "prep": "10 min",
+    "cooking": "10 min",
+    "description": "Here is a recipe that I've been using for years now for my own homemade pizza crust from scratch! Don't be intimidated by making it at home. It's so easy and is the best crust there is!",
     "ingredients": [
-      "Dry ingredients:",
-      "2 cups all-purpose flour",
-      "5 tbs cocoa powder",
-      "1 cups sugar",
-      "1 tsp baking soda",
-      "1/2 tsp salt",
-      "Wet ingredients:",
-      "1 tsp white vinegar",
-      "1 tsp vanilla extract",
-      "5 tbs vegetable oil",
-      "1 cups water"
+      "3/4 cups warm water",
+      "2 tbs granulated sugar",
+      "1 tsp active dry yeast",
+      "1 tsp salt",
+      "1 tbsp olive oil",
+      "2 cups all-purpose or plain flour",
+      "additional oil for greasing"
     ],
     "instructions": [
-      "Preheat the oven to 175 degrees Celsius. Grease an 8-inch square or 9-inch round cake pan.",
-      "Add all the dry ingredients directly to the pan and mix.",
-      "Make 3 depressions – 2 small and 1 large – in the mixed dry ingredients.",
-      "Pour the vinegar in one of the small depressions, the vanilla in the other small depression, and the vegetable oil in the large depression. Pour water over all, and mix with a fork until smooth.",
-      "Bake on the middle rack of the oven for 35 minutes, until an inserted toothpick comes out clean.",
-      "Allow to cool. Top with your favorite frosting and enjoy!"
+      "In a large bowl, combine water and sugar and sprinkle yeast on top to re-hydrate. Don't use too hot of water or you will kill your yeast.",
+      "After yeast is a bit foamy, add in salt, 1 Tbsp oil and flour. Mix well until it comes together to form a dough.",
+      "Knead until smooth and all flour is incorporated and dough is no longer sticky, about 3 minutes.",
+      "Grease a bowl with another tablespoon of oil, coat dough ball with oil and cover with a damp towel.",
+      "Let rise in a warm place for 1-2 hours or until doubled in size.",
+      "To use, grease a pan with more oil, pat dough out using your finger tips to 35 cm in diameter.",
+      "Spread with sauce, top with cheese and toppings and bake in a preheated 230 degrees celcius oven for 12-14 minutes or until crust is golden brown and cheese is melty."
     ],
-    "image": "assets/images/chocolate_cake.jpg",
-    "image_thumbnail": "assets/images/chocolate_cake_thumbnail.jpg",
-    "credit": "https://tiphero.com/chocolate-crazy-cake",
+    "image": "assets/images/pizza_crust.jpg",
+    "image_thumbnail": "assets/images/pizza_crust_thumbnail.jpg",
+    "credit": "https://www.youtube.com/watch?v=GiSzVOTbpJQ",
     "created_at": ""
   },
   {
@@ -380,6 +377,39 @@
     "image": "assets/images/baked_potato_fries.jpg",
     "image_thumbnail": "assets/images/baked_potato_fries_thumbnail.jpg",
     "credit": "https://minimalistbaker.com/cheesy-chili-baked-potato-fries-oil-free/",
+    "created_at": ""
+  },
+  {
+    "name": "chocolate_cake",
+    "category": "desserts",
+    "servings": "1",
+    "prep": "30 min",
+    "cooking": "35 min",
+    "description": "Prepare yourself. This one-pot chocolate cake is indeed crazy— for the BEST reasons. No Bowls. No eggs. No milk. No butter or dairy of any kind. Just simple ingredients, easy clean-up, and delicious fudgy taste. Watch to see how this delectable dessert is possible, then give it a try!",
+    "ingredients": [
+      "Dry ingredients:",
+      "2 cups all-purpose flour",
+      "5 tbs cocoa powder",
+      "1 cups sugar",
+      "1 tsp baking soda",
+      "1/2 tsp salt",
+      "Wet ingredients:",
+      "1 tsp white vinegar",
+      "1 tsp vanilla extract",
+      "5 tbs vegetable oil",
+      "1 cups water"
+    ],
+    "instructions": [
+      "Preheat the oven to 175 degrees Celsius. Grease an 8-inch square or 9-inch round cake pan.",
+      "Add all the dry ingredients directly to the pan and mix.",
+      "Make 3 depressions – 2 small and 1 large – in the mixed dry ingredients.",
+      "Pour the vinegar in one of the small depressions, the vanilla in the other small depression, and the vegetable oil in the large depression. Pour water over all, and mix with a fork until smooth.",
+      "Bake on the middle rack of the oven for 35 minutes, until an inserted toothpick comes out clean.",
+      "Allow to cool. Top with your favorite frosting and enjoy!"
+    ],
+    "image": "assets/images/chocolate_cake.jpg",
+    "image_thumbnail": "assets/images/chocolate_cake_thumbnail.jpg",
+    "credit": "https://tiphero.com/chocolate-crazy-cake",
     "created_at": ""
   }
 ]
