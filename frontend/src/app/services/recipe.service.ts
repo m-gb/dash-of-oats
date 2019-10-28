@@ -20,7 +20,7 @@ export interface IRecipe {
   providedIn: 'root'
 })
 export class RecipeService {
-  private uri: string = 'https://api.dashofoats.xyz/api/v1';
+  private uri: string = 'https://api.mayagoldberg.net/api/v1';
 
   constructor(private http: HttpClient) { }
 

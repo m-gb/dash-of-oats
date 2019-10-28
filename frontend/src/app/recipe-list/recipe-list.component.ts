@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { IRecipe, RecipeService } from '../services/recipe.service';
 import { ActivatedRoute } from '@angular/router';
+import fallbackRecipes from '../../assets/recipes.json';
 
 @Component({
   selector: 'app-recipe-list',
@@ -24,6 +25,14 @@ export class RecipeListComponent implements OnInit {
           this.rs.getRecipes().subscribe((data: IRecipe[]) => {
             this.recipes = data.slice(1, -1);
           });
+        }
+      }, (err: Error) => {
+        if (params.get('category')) {
+          this.category = params.get('category');
+          this.recipes = fallbackRecipes.filter(r => r.category === params.get('category'));
+        }
+        else {
+          this.recipes = fallbackRecipes.slice(1, -1);
         }
       });
     });

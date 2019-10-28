@@ -3,6 +3,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { Title } from '@angular/platform-browser';
 import { IRecipe } from '../services/recipe.service';
 import { RecipeService } from '../services/recipe.service';
+import fallbackRecipes from '../../assets/recipes.json';
 
 @Component({
   selector: 'app-recipe',
@@ -23,6 +24,16 @@ export class RecipeComponent implements OnInit {
         if (data) {
           this.recipe = data;
           this.initialServings = data.servings;
+          this.titleService.setTitle(`Dash of Oats - ${this.rs.editName(this.recipe.name)}`);
+        }
+        else {
+          this.router.navigate(['/not-found']);
+        }
+      }, (err: Error) => {
+        const localRecipe = fallbackRecipes.filter(r => r.name === params.get('name'));
+        if (localRecipe) {
+          this.recipe = localRecipe[0];
+          this.initialServings = localRecipe[0].servings;
           this.titleService.setTitle(`Dash of Oats - ${this.rs.editName(this.recipe.name)}`);
         }
         else {

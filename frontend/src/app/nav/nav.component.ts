@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RecipeService } from '../services/recipe.service';
+import fallbackRecipes from '../../assets/recipes.json';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +8,6 @@ import { RecipeService } from '../services/recipe.service';
   styleUrls: ['./nav.component.scss']
 })
 export class NavComponent implements OnInit {
-  appTitle: string = 'Dash of Oats'
   categories: string[];
 
   constructor(private rs: RecipeService) { }
@@ -15,6 +15,10 @@ export class NavComponent implements OnInit {
   ngOnInit() {
     this.rs.getCategories().subscribe((data: string[]) => {
       this.categories = data.sort();
+    }, (err: Error) => {
+      const localCategories = fallbackRecipes.map(r => r.category);
+      const localDistinctCategories = localCategories.filter((v, i, a) => a.indexOf(v) === i);
+      this.categories = localDistinctCategories.sort();
     });
   }
 }
