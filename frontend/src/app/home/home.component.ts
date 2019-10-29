@@ -15,13 +15,13 @@ export class HomeComponent implements OnInit {
   constructor(public rs: RecipeService, private titleService: Title, private router: Router) { }
 
   ngOnInit() {
-    this.titleService.setTitle('Dash of Oats');
     this.rs.getLatestRecipe().subscribe((data: IRecipe[]) => {
       if (data.length === 0) {
         this.router.navigate(['/not-found']);
       }
       else {
         this.recipe = data[0];
+        this.titleService.setTitle('Dash of Oats');
       }
     }, (err: Error) => {
       if (fallbackRecipes.length === 0) {
@@ -29,6 +29,7 @@ export class HomeComponent implements OnInit {
       }
       else {
         this.recipe = fallbackRecipes[0];
+        this.titleService.setTitle('Dash of Oats');
       }
     });
   }

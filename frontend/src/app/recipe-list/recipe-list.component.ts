@@ -29,12 +29,21 @@ export class RecipeListComponent implements OnInit {
       }, (err: Error) => {
         if (params.get('category')) {
           this.category = params.get('category');
-          this.recipes = fallbackRecipes.filter(r => r.category === params.get('category'));
+          this.recipes = addDates(fallbackRecipes).filter(r => r.category === params.get('category'));
         }
         else {
-          this.recipes = fallbackRecipes.slice(1, -1);
+          this.recipes = addDates(fallbackRecipes).slice(1, -1);
         }
       });
     });
   }
+}
+
+export function addDates(recipes: IRecipe[]) {
+  return recipes.map((r, idx) => {
+    const today = new Date();
+    const modifiedDate = new Date().setDate(today.getDate() - idx);
+    r.created_at = `${modifiedDate.toString()}`;
+    return r;
+  });
 }
