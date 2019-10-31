@@ -9,7 +9,7 @@ It's designed as a microservice:
 The servings calculator uses a pipe to multiply the ingredient amounts (using Fraction.js) by the chosen servings.
 The search function also uses a pipe to find recipes with the user's input.
 
-You can view the website at https://dashofoats.xyz
+You can view the website at https://dashofoats.mayagoldberg.net
 
 ## Development
 
