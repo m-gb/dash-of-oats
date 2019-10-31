@@ -42,6 +42,7 @@ export class RecipeListComponent implements OnInit {
 export function addDates(recipes: IRecipe[]) {
   return recipes.map((r, idx) => {
     const today = new Date();
+    today.setDate(new Date().getDate() - 7);
     const modifiedDate = new Date().setDate(today.getDate() - idx);
     r.created_at = `${modifiedDate.toString()}`;
     return r;
