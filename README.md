@@ -41,7 +41,7 @@ In order to run the web application, you will need to have three separate tabs i
     ```
     - Run the website:
     ```bash
-    dash-of-oats/frontend $ ng serve
+    dash-of-oats/frontend $ npx g serve
     ```
     - Go to http://localhost:4200
 
@@ -55,7 +55,7 @@ dash-of-oats/backend $ npm test
 ```
 - Frontend:
 ```bash
-dash-of-oats/frontend $ ng test
+dash-of-oats/frontend $ npx ng test
 ```
 
 - End-to-End:
