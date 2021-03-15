@@ -4,6 +4,7 @@ import { Title } from '@angular/platform-browser';
 import { IRecipe } from '../services/recipe.service';
 import { RecipeService } from '../services/recipe.service';
 import fallbackRecipes from '../../assets/recipes.json';
+import { addDates } from '../recipe-list/recipe-list.component';
 
 @Component({
   selector: 'app-recipe',
@@ -23,6 +24,7 @@ export class RecipeComponent implements OnInit {
       this.rs.getRecipe(params.get('name')).subscribe((data: IRecipe) => {
         if (data) {
           this.recipe = data;
+          this.recipe.created_at = addDates(fallbackRecipes).filter(x => x.name == this.recipe.name)[0].created_at;
           this.initialServings = data.servings;
           this.titleService.setTitle(`Dash of Oats - ${this.rs.editName(this.recipe.name)}`);
         }
@@ -33,6 +35,7 @@ export class RecipeComponent implements OnInit {
         const localRecipe = fallbackRecipes.filter(r => r.name === params.get('name'));
         if (localRecipe) {
           this.recipe = localRecipe[0];
+          this.recipe.created_at = addDates(fallbackRecipes).filter(x => x.name == this.recipe.name)[0].created_at;
           this.initialServings = localRecipe[0].servings;
           this.titleService.setTitle(`Dash of Oats - ${this.rs.editName(this.recipe.name)}`);
         }
