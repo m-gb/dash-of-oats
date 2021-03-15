@@ -1,5 +1,4 @@
 .img-latest {
-  height: 100%;
   width: 100%;
   display: block;
   margin: auto;
@@ -8,38 +7,20 @@
 .text-latest {
   color: black;
   font-size: 1.2rem;
+  text-align: center;
 }
 
 .date-latest {
   color: black;
   font-size: 1rem;
+  text-align: center;
 }
 
 @media (min-height: 800px) and (min-width: 1200px) {
   .img-latest {
-    height: 80vh;
-    width: 80%;
+    width: 60%;
     display: block;
     margin: auto;
-    filter: brightness(80%);
-  }
-  
-  .text-latest {
-    position: absolute;
-    top: 82%;
-    left: 25%;
-    transform: translate(-25%, -82%);
-    color: white;
-    font-size: 1.4rem;
-  }
-  
-  .date-latest {
-    position: absolute;
-    top: 85%;
-    left: 25%;
-    transform: translate(-25%, -85%);
-    color: white;
-    font-size: 1rem;
   }
 }
 
