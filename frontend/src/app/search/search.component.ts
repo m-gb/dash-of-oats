@@ -32,6 +32,7 @@ export class SearchComponent implements OnInit {
   }
 
   onClickedOutside() {
+    this.searchText = '';
     this.clickedOutside = false;
   }
 }
