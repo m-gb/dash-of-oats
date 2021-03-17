@@ -45,4 +45,10 @@ export class RecipeComponent implements OnInit {
       });
     });
   }
+
+  onKey(event: any) {
+    if (screen.width > 1200) {
+      return false;
+    }
+  }
 }

@@ -16,14 +16,17 @@ export class RecipeListComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap.subscribe(params => {
+      // fetches recipes from db, else uses json from assets
       this.rs.getCategory(params.get('category')).subscribe((data: IRecipe[]) => {
+        // fetches all recipes belonging to the category from params
         if (data.length !== 0) {
           this.category = params.get('category');
           this.recipes = data;
         }
+        // fetches all recipes except the latest one
         else {
           this.rs.getRecipes().subscribe((data: IRecipe[]) => {
-            this.recipes = data.slice(1, -1);
+            this.recipes = data.slice(1, data.length);
           });
         }
       }, (err: Error) => {
@@ -31,8 +34,9 @@ export class RecipeListComponent implements OnInit {
           this.category = params.get('category');
           this.recipes = addDates(fallbackRecipes).filter(r => r.category === params.get('category'));
         }
+        // fetches all recipes except the latest one
         else {
-          this.recipes = addDates(fallbackRecipes).slice(1, -1);
+          this.recipes = addDates(fallbackRecipes).slice(1, fallbackRecipes.length);
         }
       });
     });

@@ -7,7 +7,7 @@
   <div class="row overview text-center">
     <div class="col-lg-4">
       <span>Servings: </span>
-      <input class="servings-input input-group-text" [(ngModel)]="servingsInput" type="number" onkeydown="return false"
+      <input class="servings-input input-group-text" [(ngModel)]="servingsInput" type="number" (keydown)="onKey($event)"
         min="1" max="24" value="{{ recipe?.servings }}">
     </div>
     <div class="col-lg-4">
